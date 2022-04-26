@@ -1,6 +1,7 @@
 from abc import ABC
-from sqlalchemy.orm.session import Session
+from typing import List
 
+from sqlalchemy.orm.session import Session
 from models import Customers, JasmineRiceSale
 
 
@@ -22,3 +23,10 @@ class CustomersDao(Dao):
 class JasmineRiceSaleDao(Dao):
     def get_sale_by_id(self, id: int) -> JasmineRiceSale:
         return self.get_session.query(JasmineRiceSale).filter(JasmineRiceSale.id == id)[0]
+
+    def get_all_sale(self) -> List[JasmineRiceSale]:
+        return self.get_session.query(JasmineRiceSale).all()
+
+    def buy_jasmine_rice(self, buy: JasmineRiceSale) -> None:
+        self.get_session.add(buy)
+        self.get_session.commit()

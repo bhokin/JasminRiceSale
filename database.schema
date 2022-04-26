@@ -1,0 +1,18 @@
+-- Schema for jasmine rice sale database
+
+CREATE TABLE IF NOT EXISTS customers (
+    id             INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name     TEXT    DEFAULT '',
+    last_name      TEXT    DEFAULT '',
+    gender         TEXT    DEFAULT '',
+    age            INTEGER DEFAULT 0,
+);
+
+CREATE TABLE IF NOT EXISTS courses (
+    id            INTEGER PRIMARY KEY AUTOINCREMENT,
+    weight_kg     INTEGER NOT NULL,
+    cost          INTEGER NOT NULL,
+    time          TEXT    NOT NULL,
+    customer_id   INTEGER NOT NULL,
+    FOREIGN KEY (customer_id) REFERENCES customers (id)
+);

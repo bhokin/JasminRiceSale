@@ -5,10 +5,10 @@ CREATE TABLE IF NOT EXISTS customers (
     first_name     TEXT    DEFAULT '',
     last_name      TEXT    DEFAULT '',
     gender         TEXT    DEFAULT '',
-    age            INTEGER DEFAULT 0,
+    age            INTEGER DEFAULT 0
 );
 
-CREATE TABLE IF NOT EXISTS courses (
+CREATE TABLE IF NOT EXISTS jasmine_rice_sale (
     id            INTEGER PRIMARY KEY AUTOINCREMENT,
     weight_kg     INTEGER NOT NULL,
     cost          INTEGER NOT NULL,

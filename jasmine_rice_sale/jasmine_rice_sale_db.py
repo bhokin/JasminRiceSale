@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 from jasmine_rice_sale.jasmine_rice_sale_dao import CustomersDao, JasmineRiceSaleDao
 
 
-class JasmineRiceSale:
+class JasmineRiceSaleDb:
 
     def __init__(self, connection_string: str = "sqlite:///database.db") -> None:
         self.__db_engine = create_engine(connection_string)

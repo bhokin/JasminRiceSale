@@ -1,6 +1,6 @@
 # JasminRiceSale
 
-This application is showing the sales list of jasmine rice.
+This application is allowed the user to buy jasmine rice and shows the sales list of jasmine rice.
 
 ## Create database from schema and import data
 

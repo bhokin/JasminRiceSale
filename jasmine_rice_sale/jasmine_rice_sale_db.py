@@ -6,8 +6,9 @@ from jasmine_rice_sale.jasmine_rice_sale_dao import CustomersDao, JasmineRiceSal
 
 class JasmineRiceSaleDb:
 
-    def __init__(self, connection_string: str = "sqlite:///database.db") -> None:
-        self.__db_engine = create_engine(connection_string)
+    def __init__(self) -> None:
+        # SQLite connects to file-based databases
+        self.__db_engine = create_engine("sqlite:///database.db")
         session_with_engine = sessionmaker(bind=self.__db_engine)
         self.__db_session = session_with_engine()
 

@@ -24,6 +24,6 @@ sqlite> .import data/customers.csv customers
 sqlite> .import data/jasmine_rice_sale_list_in_a_day.csv jasmine_rice_sale 
 ```
 
-##Configure and Run the application  
+## Configure and Run the application  
 
  - Use `python main.py` to run the application.

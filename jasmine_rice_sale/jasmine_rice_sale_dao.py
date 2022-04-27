@@ -19,6 +19,13 @@ class CustomersDao(Dao):
     def get_customer_by_id(self, id: int) -> Customers:
         return self.get_session.query(Customers).filter(Customers.id == id)[0]
 
+    def get_all_customers(self) -> List[Customers]:
+        return self.get_session.query(Customers).all()
+
+    def add_customer(self, customer: Customers) -> None:
+        self.get_session.add(customer)
+        self.get_session.commit()
+
 
 class JasmineRiceSaleDao(Dao):
     def get_sale_by_id(self, id: int) -> JasmineRiceSale:

@@ -12,8 +12,8 @@ class JasmineRiceSaleDb:
         session_with_engine = sessionmaker(bind=self.__db_engine)
         self.__db_session = session_with_engine()
 
-    def customer(self):
+    def customer(self) -> CustomersDao:
         return CustomersDao(self.__db_session)
 
-    def jasmine_rice_sale_dao(self):
+    def jasmine_rice_sale(self) -> JasmineRiceSaleDao:
         return JasmineRiceSaleDao(self.__db_session)

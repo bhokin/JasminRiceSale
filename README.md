@@ -26,4 +26,11 @@ sqlite> .import data/jasmine_rice_sale_list_in_a_day.csv jasmine_rice_sale
 
 ## Configure and Run the application  
 
- - Use `python main.py` to run the application.
+ - Use `python main.py` to run the application.  
+
+
+## Project Documents
+
+[Domain model](../../wiki/Domain%20model)  
+[UML class diagram](../../wiki/UML%20class%20diagram)  
+[Package diagram](../../wiki/Package%20diagram)  

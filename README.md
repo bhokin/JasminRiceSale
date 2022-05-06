@@ -34,4 +34,4 @@ sqlite> .import data/jasmine_rice_sale_list_in_a_day.csv jasmine_rice_sale
 [Domain model](../../wiki/Domain%20model)  
 [UML class diagram](../../wiki/UML%20class%20diagram)  
 [Package diagram](../../wiki/Package%20diagram)  
-[Web Service API](../../Web%20Service%20API)
+[Web Service API](../../wiki/Web%20Service%20API)
